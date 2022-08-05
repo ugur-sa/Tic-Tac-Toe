@@ -3,3 +3,36 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  background-color: rgba(100, 100, 100, 0.3);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-container {
+  width: 500px;
+  height: 500px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 5px;
+  box-shadow: 2px 2px 20px gray;
+  background-color: rgba(100, 100, 100, 0.3);
+}
+
+.game-container > div {
+  background-color: whitesmoke;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 6rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.game-container > div:hover {
+  background-color: white;
+}
